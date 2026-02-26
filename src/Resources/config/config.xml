@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title lang="de-DE">Allgemeine Einstellungen</title>
+        <title lang="en-GB">General Settings</title>
+
+        <input-field type="bool">
+            <name>isActive</name>
+            <label lang="de-DE">Aktiv</label>
+            <label lang="en-GB">Active</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showProgressBar</name>
+            <label lang="de-DE">Fortschrittsbalken anzeigen</label>
+            <label lang="en-GB">Show progress bar</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>showWhenReached</name>
+            <label lang="de-DE">Nachricht anzeigen wenn kostenloser Versand erreicht</label>
+            <label lang="en-GB">Show message when free shipping reached</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+    </card>
+</config>

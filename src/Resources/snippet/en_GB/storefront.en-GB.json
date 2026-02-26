@@ -1,0 +1,7 @@
+{
+  "actFreeShippingBar": {
+    "remaining": "Only %amount% left for free shipping!",
+    "reached": "You qualify for free shipping!",
+    "notAvailable": ""
+  }
+}

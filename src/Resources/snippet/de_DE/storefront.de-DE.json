@@ -1,0 +1,7 @@
+{
+  "actFreeShippingBar": {
+    "remaining": "Noch %amount% bis zum kostenlosen Versand!",
+    "reached": "Sie erhalten kostenlosen Versand!",
+    "notAvailable": ""
+  }
+}
