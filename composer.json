@@ -3,11 +3,10 @@
   "description": "Displays a free shipping progress bar in the cart and offcanvas cart.",
   "type": "shopware-platform-plugin",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     {
-      "name": "Ralph Geldmacher",
-      "email": "ralph@actualize.de",
+      "name": "Actualize",
       "homepage": "https://www.actualize.de"
     }
   ],

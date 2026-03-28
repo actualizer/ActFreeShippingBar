@@ -38,11 +38,6 @@ class FreeShippingCalculator
             'percentage' => 0.0,
         ];
 
-        // Hide bar if shipping is already free (all items have free-delivery flag)
-        if ($this->isShippingAlreadyFree($cart)) {
-            return $default;
-        }
-
         $shippingMethodId = $context->getShippingMethod()->getId();
 
         $criteria = new Criteria([$shippingMethodId]);
@@ -71,6 +66,12 @@ class FreeShippingCalculator
         $remaining = max(0.0, $threshold - $currentValue);
         $reached = $currentValue >= $threshold;
         $percentage = $threshold > 0 ? min(100.0, ($currentValue / $threshold) * 100) : 0.0;
+
+        // Hide bar if threshold not reached but shipping is already free
+        // (all items have free-delivery flag — bar would be misleading)
+        if (!$reached && $this->isShippingAlreadyFree($cart)) {
+            return $default;
+        }
 
         return [
             'freeShippingPossible' => true,

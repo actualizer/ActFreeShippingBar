@@ -3,9 +3,25 @@
 
     .act-free-shipping-bar__message {
         font-size: 0.85rem;
+        color: #e67e22;
+        font-weight: 600;
     }
 
     .progress {
         border-radius: 3px;
+    }
+
+    .progress-bar {
+        background-color: #e67e22;
+    }
+
+    &--reached {
+        .act-free-shipping-bar__message {
+            color: #28a745;
+        }
+
+        .progress-bar {
+            background-color: #28a745;
+        }
     }
 }

@@ -1,0 +1,14 @@
+{
+    "actFreeShippingBar": {
+        "settings": {
+            "info": {
+                "heading": "Wichtiger Hinweis",
+                "freeDelivery1": "Produkte mit aktiviertem \"Versandkostenfrei\"-Flag werden NICHT zum Warenkorbwert hinzugerechnet. Dies entspricht dem Shopware-Standard — Shopware selbst schließt diese Artikel bei der Versandkostenberechnung aus.",
+                "freeDelivery2": "Beispiel: Bei einem Schwellenwert von 50 € zählt ein versandkostenfreier Artikel (40 €) nicht mit. Nur der normale Artikel (20 €) wird berücksichtigt — es fehlen also noch 30 €.",
+                "shippingMethod": "Das Plugin unterstützt nur Versandarten mit Berechnung nach Warenkorbwert, die eine Preisstufe mit 0 € Versandkosten enthalten.",
+                "description": "Fortschrittsbalken für kostenlosen Versand im Offcanvas-Warenkorb und auf der Bestellübersicht.",
+                "issues": "Probleme oder Feature-Wünsche?"
+            }
+        }
+    }
+}

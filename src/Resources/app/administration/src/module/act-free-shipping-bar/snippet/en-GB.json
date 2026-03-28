@@ -1,0 +1,14 @@
+{
+    "actFreeShippingBar": {
+        "settings": {
+            "info": {
+                "heading": "Important Notice",
+                "freeDelivery1": "Products with the \"free delivery\" flag enabled are NOT counted towards the cart value. This matches Shopware's default behavior — Shopware itself excludes these items when calculating shipping costs.",
+                "freeDelivery2": "Example: With a €50 threshold, a free-delivery item (€40) does not count. Only the regular item (€20) is considered — so €30 remain.",
+                "shippingMethod": "The plugin only supports shipping methods using calculation by cart price that include a price tier with €0 shipping cost.",
+                "description": "Free shipping progress bar in the offcanvas cart and checkout summary.",
+                "issues": "Problems or feature requests?"
+            }
+        }
+    }
+}
