@@ -6,7 +6,7 @@
 
         {% if fsb.freeShippingPossible %}
             {% if fsb.reached and fsb.showWhenReached %}
-                <div class="act-free-shipping-bar act-free-shipping-bar--reached mb-2">
+                <div class="act-free-shipping-bar act-free-shipping-bar--reached mt-2 mb-2">
                     <div class="act-free-shipping-bar__message text-success fw-bold">
                         {{ 'actFreeShippingBar.reached'|trans|sw_sanitize }}
                     </div>
@@ -17,7 +17,7 @@
                     {% endif %}
                 </div>
             {% elseif not fsb.reached %}
-                <div class="act-free-shipping-bar mb-2">
+                <div class="act-free-shipping-bar mt-2 mb-2">
                     <div class="act-free-shipping-bar__message">
                         {{ 'actFreeShippingBar.remaining'|trans({'%amount%': fsb.remaining|currency})|sw_sanitize }}
                     </div>
