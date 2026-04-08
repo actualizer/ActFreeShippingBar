@@ -8,6 +8,7 @@ use Shopware\Core\System\SystemConfig\SystemConfigService;
 use Shopware\Storefront\Page\Checkout\Cart\CheckoutCartPageLoadedEvent;
 use Shopware\Storefront\Page\Checkout\Confirm\CheckoutConfirmPageLoadedEvent;
 use Shopware\Storefront\Page\Checkout\Offcanvas\OffcanvasCartPageLoadedEvent;
+use Shopware\Storefront\Page\Checkout\Register\CheckoutRegisterPageLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class FreeShippingBarSubscriber implements EventSubscriberInterface
@@ -24,11 +25,12 @@ class FreeShippingBarSubscriber implements EventSubscriberInterface
             CheckoutCartPageLoadedEvent::class => 'onCartPageLoaded',
             OffcanvasCartPageLoadedEvent::class => 'onCartPageLoaded',
             CheckoutConfirmPageLoadedEvent::class => 'onCartPageLoaded',
+            CheckoutRegisterPageLoadedEvent::class => 'onCartPageLoaded',
         ];
     }
 
     public function onCartPageLoaded(
-        CheckoutCartPageLoadedEvent|OffcanvasCartPageLoadedEvent|CheckoutConfirmPageLoadedEvent $event
+        CheckoutCartPageLoadedEvent|OffcanvasCartPageLoadedEvent|CheckoutConfirmPageLoadedEvent|CheckoutRegisterPageLoadedEvent $event
     ): void {
         $salesChannelId = $event->getSalesChannelContext()->getSalesChannelId();
 
