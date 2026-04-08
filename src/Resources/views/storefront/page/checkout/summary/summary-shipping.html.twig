@@ -6,7 +6,7 @@
     {% if page.extensions.actFreeShippingBar is defined %}
         {% set fsb = page.extensions.actFreeShippingBar %}
 
-        {% if fsb.freeShippingPossible %}
+        {% if fsb.freeShippingPossible and not fsb.hideInSummary %}
             {% if fsb.reached and fsb.showWhenReached %}
                 <dd class="col-12">
                     <div class="act-free-shipping-bar act-free-shipping-bar--reached mt-1">

@@ -52,6 +52,8 @@ class FreeShippingBarSubscriber implements EventSubscriberInterface
             $salesChannelId
         );
 
+        $data['hideInSummary'] = $event instanceof CheckoutRegisterPageLoadedEvent;
+
         $event->getPage()->addExtension('actFreeShippingBar', new ArrayStruct($data));
     }
 }
