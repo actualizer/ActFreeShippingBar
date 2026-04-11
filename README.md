@@ -86,44 +86,6 @@ The plugin includes translations for:
 - **German (de-DE)**: "Noch X bis zum kostenlosen Versand!" / "Sie erhalten kostenlosen Versand!"
 - **English (en-GB)**: "Only X left for free shipping!" / "You qualify for free shipping!"
 
-## File Structure
-
-```
-ActFreeShippingBar/
-├── composer.json
-├── README.md
-└── src/
-    ├── ActFreeShippingBar.php
-    ├── Service/
-    │   └── FreeShippingCalculator.php
-    ├── Subscriber/
-    │   └── FreeShippingBarSubscriber.php
-    └── Resources/
-        ├── config/
-        │   ├── config.xml
-        │   ├── plugin.png
-        │   └── services.xml
-        ├── snippet/
-        │   ├── de_DE/
-        │   │   └── storefront.de-DE.json
-        │   └── en_GB/
-        │       └── storefront.en-GB.json
-        ├── views/
-        │   └── storefront/
-        │       ├── component/
-        │       │   └── checkout/
-        │       │       └── offcanvas-cart-summary.html.twig
-        │       └── page/
-        │           └── checkout/
-        │               └── summary/
-        │                   └── summary-shipping.html.twig
-        └── app/
-            └── storefront/
-                └── src/
-                    └── scss/
-                        └── base.scss
-```
-
 ## Development
 
 ### Building/Testing
