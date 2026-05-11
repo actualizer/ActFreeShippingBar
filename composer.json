@@ -1,9 +1,9 @@
 {
-  "name": "act/free-shipping-bar",
+  "name": "actualizer/free-shipping-bar",
   "description": "Displays a free shipping progress bar in the cart and offcanvas cart.",
   "type": "shopware-platform-plugin",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     {
       "name": "Actualize",

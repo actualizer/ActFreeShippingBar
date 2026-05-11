@@ -22,6 +22,17 @@ A Shopware 6 plugin that displays a free shipping progress bar in the offcanvas 
 
 ## Installation
 
+### Via Composer (recommended)
+
+```bash
+composer require actualizer/free-shipping-bar
+bin/console plugin:refresh
+bin/console plugin:install --activate ActFreeShippingBar
+bin/console cache:clear
+```
+
+### Manual
+
 1. Download or clone this plugin into your `custom/plugins/` directory
 2. Install and activate the plugin via CLI:
    ```bash
