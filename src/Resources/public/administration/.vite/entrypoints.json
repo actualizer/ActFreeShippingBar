@@ -1,0 +1,23 @@
+{
+  "base": "/bundles/actfreeshippingbar/administration/",
+  "entryPoints": {
+    "act-free-shipping-bar": {
+      "css": [],
+      "dynamic": [],
+      "js": [
+        "/bundles/actfreeshippingbar/administration/assets/act-free-shipping-bar-BfLs0Gwr.js"
+      ],
+      "legacy": false,
+      "preload": []
+    }
+  },
+  "legacy": false,
+  "metadatas": {},
+  "version": [
+    "7.1.0",
+    7,
+    1,
+    0
+  ],
+  "viteServer": null
+}
