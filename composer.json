@@ -3,7 +3,7 @@
   "description": "Displays a free shipping progress bar in the cart and offcanvas cart.",
   "type": "shopware-platform-plugin",
   "license": "MIT",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "authors": [
     {
       "name": "Actualize",
@@ -41,8 +41,8 @@
     }
   },
   "require": {
-    "php": ">=8.3",
-    "shopware/core": ">=6.6.10 <6.8.0",
-    "shopware/storefront": ">=6.6.10 <6.8.0"
+    "php": ">=8.4",
+    "shopware/core": ">=6.7 <6.8",
+    "shopware/storefront": ">=6.7 <6.8"
   }
 }
