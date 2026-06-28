@@ -13,12 +13,12 @@ A Shopware 6 plugin that displays a free shipping progress bar in the offcanvas 
 - Hides the bar when all items already have the free-delivery flag
 - Multi-language support (German & English)
 - Admin configuration to enable/disable the feature
-- Compatible with Shopware 6.6.10 - 6.7.x
+- Compatible with Shopware 6.7.x
 
 ## Requirements
 
-- Shopware 6.6.10 or higher (up to 6.7.x)
-- PHP 8.3 or higher
+- Shopware 6.7.x
+- PHP 8.4 or higher
 
 ## Installation
 
@@ -117,9 +117,9 @@ The plugin respects Shopware's logging configuration. Check your log files for a
 
 ## Compatibility
 
-- **Shopware Version**: 6.6.10 - 6.7.x
-- **PHP Version**: 8.3+
-- **Template Compatibility**: Uses Shopware 6.6+ template structure
+- **Shopware Version**: 6.7.x
+- **PHP Version**: 8.4+
+- **Template Compatibility**: Uses Shopware 6.7+ template structure
 
 ## Support
 
