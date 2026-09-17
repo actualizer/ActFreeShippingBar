@@ -2,10 +2,12 @@
   "base": "/bundles/actfreeshippingbar/administration/",
   "entryPoints": {
     "act-free-shipping-bar": {
-      "css": [],
+      "css": [
+        "/bundles/actfreeshippingbar/administration/assets/act-free-shipping-bar-3nZnEitq.css"
+      ],
       "dynamic": [],
       "js": [
-        "/bundles/actfreeshippingbar/administration/assets/act-free-shipping-bar-BfLs0Gwr.js"
+        "/bundles/actfreeshippingbar/administration/assets/act-free-shipping-bar-G6OC16AD.js"
       ],
       "legacy": false,
       "preload": []

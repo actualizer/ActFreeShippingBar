@@ -2,10 +2,14 @@
     "actFreeShippingBar": {
         "settings": {
             "info": {
-                "heading": "Wichtiger Hinweis",
-                "freeDelivery1": "Produkte mit aktiviertem \"Versandkostenfrei\"-Flag werden NICHT zum Warenkorbwert hinzugerechnet. Dies entspricht dem Shopware-Standard — Shopware selbst schließt diese Artikel bei der Versandkostenberechnung aus.",
-                "freeDelivery2": "Beispiel: Bei einem Schwellenwert von 50 € zählt ein versandkostenfreier Artikel (40 €) nicht mit. Nur der normale Artikel (20 €) wird berücksichtigt — es fehlen also noch 30 €.",
-                "shippingMethod": "Das Plugin unterstützt nur Versandarten mit Berechnung nach Warenkorbwert, die eine Preisstufe mit 0 € Versandkosten enthalten.",
+                "howTo": {
+                    "title": "So funktioniert's",
+                    "item1": "Der Schwellenwert wird nicht eingetragen, sondern automatisch aus der aktiven Versandart gelesen: aus der Preisstufe, ab der 0 € Versandkosten gelten.",
+                    "item2": "Deshalb erscheint der Balken nur bei Versandarten mit Berechnung <strong>nach Warenkorbwert</strong> und genau so einer Preisstufe. Fehlt sie, bleibt der Balken aus — ohne Fehlermeldung.",
+                    "item3": "Artikel, die als versandkostenfrei markiert sind, zählen nicht auf den Warenkorbwert ein.",
+                    "item4": "Angezeigt wird der Balken im Warenkorb-Offcanvas und in der Checkout-Übersicht.",
+                    "item5": "Nach Änderungen an Texten oder Farben ist ein <strong>theme:compile</strong> nötig, damit sie im Storefront ankommen."
+                },
                 "description": "Fortschrittsbalken für kostenlosen Versand im Offcanvas-Warenkorb und auf der Bestellübersicht.",
                 "issues": "Probleme oder Feature-Wünsche?"
             }
