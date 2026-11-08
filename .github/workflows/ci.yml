@@ -32,3 +32,25 @@ jobs:
         with:
           action: check
           check-against: ${{ matrix.check-against }}
+
+  phpstan:
+    name: PHPStan (Shopware 6.7.16.0)
+    runs-on: ubuntu-latest
+    steps:
+      # Checks out Shopware to the workspace root and this repository to
+      # custom/plugins/ActFreeShippingBar, then installs its composer requirements.
+      - name: Set up Shopware
+        uses: shopware/github-actions/setup-extension@main
+        with:
+          extensionName: ActFreeShippingBar
+          shopwareVersion: v6.7.16.0
+          phpVersion: '8.4'
+
+      # The checkout's extension installer would load every installed PHPStan extension;
+      # this plugin's standard is its own config plus phpstan-strict-rules only.
+      - name: PHPStan
+        run: |
+          rm -rf vendor/phpstan/extension-installer
+          composer dump-autoload --no-scripts --quiet
+          printf 'includes:\n    - custom/plugins/ActFreeShippingBar/phpstan.neon.dist\n    - vendor/phpstan/phpstan-strict-rules/rules.neon\n' > phpstan-strict.neon
+          vendor/bin/phpstan analyse -c phpstan-strict.neon --no-progress --memory-limit=1G --error-format=github

@@ -50,7 +50,7 @@ class FreeShippingCalculator
             $context->getContext()
         )->getEntities()->first();
 
-        if (!$shippingMethod || !$shippingMethod->getPrices()) {
+        if ($shippingMethod === null || $shippingMethod->getPrices() === null) {
             return $default;
         }
 
@@ -119,7 +119,7 @@ class FreeShippingCalculator
             }
 
             $currencyPriceCollection = $shippingPrice->getCurrencyPrice();
-            if (!$currencyPriceCollection) {
+            if ($currencyPriceCollection === null) {
                 continue;
             }
 
@@ -148,7 +148,7 @@ class FreeShippingCalculator
     {
         /** @var Price|null $price */
         $price = $priceCollection->getCurrencyPrice($context->getCurrencyId());
-        if (!$price) {
+        if ($price === null) {
             return null;
         }
 
@@ -198,12 +198,12 @@ class FreeShippingCalculator
             }
 
             $deliveryInfo = $lineItem->getDeliveryInformation();
-            if ($deliveryInfo && $deliveryInfo->getFreeDelivery()) {
+            if ($deliveryInfo !== null && $deliveryInfo->getFreeDelivery()) {
                 continue;
             }
 
             $price = $lineItem->getPrice();
-            if ($price) {
+            if ($price !== null) {
                 $total += $price->getTotalPrice();
             }
         }
