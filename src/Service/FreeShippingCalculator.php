@@ -48,7 +48,7 @@ class FreeShippingCalculator
         $shippingMethod = $this->shippingMethodRepository->search(
             $criteria,
             $context->getContext()
-        )->first();
+        )->getEntities()->first();
 
         if (!$shippingMethod || !$shippingMethod->getPrices()) {
             return $default;
