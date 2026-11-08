@@ -2,6 +2,11 @@
 
 A Shopware 6 plugin that displays a free shipping progress bar in the offcanvas cart and checkout summary, showing customers how much more they need to spend to qualify for free shipping.
 
+## Requirements
+
+- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
+- PHP 8.4 or higher
+
 ## Features
 
 - Free shipping progress bar in the offcanvas (mini) cart and checkout summary
@@ -13,11 +18,6 @@ A Shopware 6 plugin that displays a free shipping progress bar in the offcanvas 
 - Hides the bar when all items already have the free-delivery flag
 - Multi-language support (German & English)
 - Admin configuration to enable/disable the feature
-
-## Requirements
-
-- Shopware `>=6.7 <6.8`, tested with 6.7.16.0
-- PHP 8.4 or higher
 
 ## Installation
 
